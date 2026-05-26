@@ -10,7 +10,7 @@ echo "🚀 Starting PikaOS Customization Setup..."
 # 1. Update and Install System Dependencies
 echo "📦 Installing system dependencies..."
 sudo apt update
-sudo apt install -y curl git unzip sassc libfuse2t64 gnome-terminal wl-clipboard neovim ripgrep fd-find build-essential
+sudo apt install -y curl tealdeer thefuck git unzip sassc libfuse2t64 gnome-terminal wl-clipboard neovim ripgrep fd-find build-essential
 
 # 2. Install Shell Enhancements
 echo "🐚 Setting up Shell (Starship, Zoxide, Fzf, Eza, ble.sh)..."
@@ -92,3 +92,4 @@ echo "🔑 Setting up rEFInd (Demon Slayer)..."
 
 echo "✅ Setup Finished! Please restart your session."
 echo "👉 Run 'gdm-settings' to sync your login screen theme."
+echo "eval \$(thefuck --alias)" >> ~/.bashrc

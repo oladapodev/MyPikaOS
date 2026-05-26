@@ -96,3 +96,5 @@ alias vim="nvim"
 
 # --- ble.sh attachment (Must be at the end) ---
 [[ ${BLE_VERSION-} ]] && ble-attach
+eval $(thefuck --alias)
+alias helpme="tldr"
