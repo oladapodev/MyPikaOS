@@ -10,10 +10,12 @@ echo "🚀 Starting PikaOS Customization Setup..."
 # 1. Update and Install System Dependencies
 echo "📦 Installing system dependencies..."
 sudo apt update
-sudo apt install -y curl git unzip sassc libfuse2t64 gnome-terminal wl-clipboard
+sudo apt install -y curl git unzip sassc libfuse2t64 gnome-terminal wl-clipboard neovim ripgrep fd-find build-essential
 
 # 2. Install Shell Enhancements
 echo "🐚 Setting up Shell (Starship, Zoxide, Fzf, Eza, ble.sh)..."
+mkdir -p ~/.local/bin
+ln -sf /usr/bin/fdfind ~/.local/bin/fd 2>/dev/null || true
 # Starship
 curl -sS https://starship.rs/install.sh | sh -s -- -y
 # Zoxide
@@ -58,6 +60,8 @@ cp ./configs/bashrc ~/.bashrc
 cp ./configs/fzf.bash ~/.fzf.bash 2>/dev/null || true
 mkdir -p ~/.config
 cp ./configs/starship.toml ~/.config/starship.toml 2>/dev/null || true
+mkdir -p ~/.config/nvim
+cp -r ./configs/nvim/* ~/.config/nvim/ 2>/dev/null || true
 mkdir -p ~/.config/gtk-3.0 ~/.config/gtk-4.0
 cp ./configs/gtk3.css ~/.config/gtk-3.0/gtk.css
 cp ./configs/gtk4.css ~/.config/gtk-4.0/gtk.css
