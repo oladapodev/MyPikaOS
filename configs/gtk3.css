@@ -1,1 +1,14 @@
-.terminal-window headerbar button.search { display: inline-block !important; }
+/* Add borders to top bar sections */
+#panel .panel-button {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    margin: 3px 5px;
+    padding: 0 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Fix for the Terminal Search button */
+.terminal-window headerbar button.search { 
+    display: inline-block !important; 
+    visibility: visible !important;
+}
