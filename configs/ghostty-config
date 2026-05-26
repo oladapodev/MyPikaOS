@@ -4,6 +4,3 @@ theme = "Adwaita Dark"
 window-decoration = false
 background-opacity = 0.8
 background-blur = true
-window-titlebutton-action-left = "close"
-window-titlebutton-action-middle = "minimize"
-window-titlebutton-action-right = "maximize"
