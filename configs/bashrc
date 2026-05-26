@@ -92,6 +92,7 @@ alias ll="eza -lh --icons --group-directories-first"
 alias la="eza -a --icons --group-directories-first"
 alias lt="eza --tree --icons"
 alias grep="grep --color=auto"
+alias vim="nvim"
 
 # --- ble.sh attachment (Must be at the end) ---
 [[ ${BLE_VERSION-} ]] && ble-attach
