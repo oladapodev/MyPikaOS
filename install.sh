@@ -55,6 +55,9 @@ cp -r ./configs/Rounded-Rectangle ~/.themes/ 2>/dev/null || true
 # 5. Apply Configs
 echo "⚙️ Applying configurations..."
 cp ./configs/bashrc ~/.bashrc
+cp ./configs/fzf.bash ~/.fzf.bash 2>/dev/null || true
+mkdir -p ~/.config
+cp ./configs/starship.toml ~/.config/starship.toml 2>/dev/null || true
 mkdir -p ~/.config/gtk-3.0 ~/.config/gtk-4.0
 cp ./configs/gtk3.css ~/.config/gtk-3.0/gtk.css
 cp ./configs/gtk4.css ~/.config/gtk-4.0/gtk.css
