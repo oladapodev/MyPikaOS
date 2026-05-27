@@ -1,6 +1,10 @@
 font-family = "JetBrainsMono Nerd Font"
 font-size = 11
 theme = "Adwaita Dark"
-window-decoration = false
+window-decoration = true
+window-theme = "macos"
 background-opacity = 0.8
 background-blur = true
+# Enable image support/clipboard fixes
+clipboard-read = "allow"
+clipboard-write = "allow"
