@@ -68,13 +68,13 @@ cp ./configs/gtk4.css ~/.config/gtk-4.0/gtk.css
 
 # Link GTK4 theme
 mkdir -p ~/.config/gtk-4.0
-ln -sf ~/.themes/WhiteSur-Dark/gtk-4.0/gtk.css ~/.config/gtk-4.0/gtk.css
-ln -sf ~/.themes/WhiteSur-Dark/gtk-4.0/gtk-dark.css ~/.config/gtk-4.0/gtk-dark.css
-ln -sf ~/.themes/WhiteSur-Dark/gtk-4.0/assets ~/.config/gtk-4.0/assets
+ln -sf ~/.themes/Orchis-Dark-Compact/gtk-4.0/gtk.css ~/.config/gtk-4.0/gtk.css
+ln -sf ~/.themes/Orchis-Dark-Compact/gtk-4.0/gtk-dark.css ~/.config/gtk-4.0/gtk-dark.css
+ln -sf ~/.themes/Orchis-Dark-Compact/gtk-4.0/assets ~/.config/gtk-4.0/assets
 
 # 6. GNOME Settings
 echo "🖥️ Setting GNOME Preferences..."
-gsettings set org.gnome.desktop.interface gtk-theme 'WhiteSur-Dark'
+gsettings set org.gnome.desktop.interface gtk-theme 'Orchis-Dark-Compact'
 gsettings set org.gnome.desktop.interface cursor-theme 'FernBLZ'
 gsettings set org.gnome.desktop.interface icon-theme 'Slot-Beauty-Dark-Icons'
 gsettings set org.gnome.shell.extensions.user-theme name 'Orchis-Dark-Compact'
